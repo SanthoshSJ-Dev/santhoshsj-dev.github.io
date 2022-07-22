@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Roboto',cursive;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+html,body{
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: var(--roboto);
+}
+
+:root{
+    --primary-color:#1793b3;
+    --secondary-color:#106b81;
+    --bg-gray:#c0c0c038;
+    --roboto:'Roboto',cursive;
+}
