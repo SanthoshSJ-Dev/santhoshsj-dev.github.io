@@ -9,6 +9,15 @@ a {
   color: unset;
 }
 
+.preloader{
+  background: #21242d url(../assets/loader.gif) no-repeat center center;
+  background-size: 30%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
 /*==================================Banner Start==================================*/
 
 .banner {
@@ -261,7 +270,7 @@ a {
   letter-spacing: 2px;
 }
 
-.content-1 {
+.sm-content-1 {
   text-align: right;
 }
 
@@ -274,7 +283,7 @@ a {
   font-style: italic;
 }
 
-.content-icons {
+.circle {
   width: 40px;
   height: 40px;
   display: flex;
@@ -287,8 +296,14 @@ a {
   margin: 10px;
 }
 
-.content-2 {
+.sm-content-2 {
   text-align: left;
+}
+
+.sm-content-icons{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .edu-title-r {
@@ -301,24 +316,15 @@ a {
   font-style: italic;
 }
 
-.edu-sm{
+.fa-arrow-right-long{
   visibility: hidden;
   position: absolute;
 }
 
-@media (max-width: 375px) {
+
+@media (max-width: 768px) {
   .resume {
     padding: 80px 15px;
-  }
-
-  .edu-lg{
-    visibility: hidden;
-    position: absolute;
-  }
-
-  .edu-sm{
-    visibility: visible;
-    position: unset;
   }
 
   .sm-content-1 {
@@ -341,19 +347,6 @@ a {
     align-items: center;
   }
 
-  .circle {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
-    border-radius: 100%;
-    margin: 10px;
-  }
-
   .fa-arrow-right-long{
     margin: 0px 10px 0px 0px;
   }
@@ -371,7 +364,6 @@ a {
     font-size: 13px;
   }
 } 
-
 
 /*==================================Resume End==================================*/
 
