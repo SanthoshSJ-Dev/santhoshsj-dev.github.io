@@ -1,15 +1,19 @@
-.body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url(./partials.css);
 
 a {
   text-decoration: none;
   color: unset;
 }
 
-.preloader{
+a:hover{
+  color:unset;
+}
+
+.cyan-color{
+  color: var(--primary-color);
+}
+
+/*.preloader{
   background: #21242d url(../assets/loader.gif) no-repeat center center;
   background-size: 30%;
   height: 100vh;
@@ -42,7 +46,7 @@ a {
 }
 
 .helloworld {
-  color: #0d6efd;
+  color: var(--primary-color);
   font-weight: 700;
   letter-spacing: 1.5px;
   line-height: 0;
@@ -83,34 +87,7 @@ a {
 }
 
 .social-media-icons a:hover {
-  color: #0d6efd;
-}
-
-@media (max-width: 375px) {
-  .helloworld {
-    font-size: medium;
-  }
-
-  .name {
-    font-size: 2.5rem;
-  }
-
-  .desgn {
-    font-size: 0.8rem;
-  }
-
-  .about-me-btn {
-    padding: 10px 15px;
-    font-size: 0.8rem;
-  }
-
-  .social-media-icons a {
-    margin: 0px 2% 0px 2%;
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
+  color: var(--bs-cyan);
 }
 
 /*==================================Banner Start==================================*/
@@ -123,7 +100,7 @@ a {
 }
 
 .fp-title {
-  color: #0d6efd;
+  color: var(--bs-cyan);
   letter-spacing: 2px;
   font-weight: 700;
 }
@@ -133,19 +110,11 @@ a {
   font-weight: 400;
 }
 
-@media (max-width: 375px) {
-
-  .fp-projects {
-    margin: 2% 5%;
-    width: 90%;
-  }
-}
-
 /*==================================featured Projects End==================================*/
 
 /*==================================About Start==================================*/
 
-.about {
+.about{
   padding: 80px 0px;
 }
 
@@ -154,30 +123,38 @@ a {
 }
 
 .a-title {
-  color: #0d6efd;
+  color: var(--bs-cyan);
   letter-spacing: 2px;
   font-weight: 700;
 }
 
 .a-description {
-  margin-top: 10px;
+  margin-top: 10px 0px;
   font-weight: 400;
 }
 
 .profile-pic {
-  width: 30%;
+  width: 40%;
 }
 
 .about-titles p{
-  margin: 10px;
+  margin: 10px 0px;
+}
+
+.about-l{
+  padding: 15px;
 }
 
 .ap-intro {
   text-align: justify;
-  margin: 20px 0;
+  margin: 20px 0px;
 }
 
-.about-2 .text {
+.about-r{
+  padding: 15px;
+}
+
+.about-secondary .text {
   letter-spacing: 1px;
 }
 
@@ -215,38 +192,12 @@ a {
   padding: 10px;
 }
 
-@media (max-width: 375px) {
-
-  .profile-pic {
-    width: 80%;
-  }
-  
-  .about-titles p{
-    font-size: small;
-    margin: 10px;
-  }
-
-  .profile .text,.skills .text{
-    text-align: center;
-  }
-
-  .ap-intro {
-    text-align: justify;
-    padding: 0px 15px;
-  }
-  
-  .about-2 .text,.fullname p,.dob p,.website p,.email p,.skills,.skill-progress {
-    padding: 0px 15px;
-  }
-  
-}
-
 /*==================================About End==================================*/
 
 /*==================================Resume Start==================================*/
 
 .resume {
-  background-color: silver;
+  background-color: var(--bg-gray);
   padding: 80px;
 }
 
@@ -255,7 +206,7 @@ a {
 }
 
 .r-title {
-  color: #0d6efd;
+  color: var(--bs-cyan);
   letter-spacing: 2px;
   font-weight: 700;
 }
@@ -266,7 +217,7 @@ a {
 
 .r-title-2 {
   margin: 20px;
-  color: #0d6efd;
+  color: var(--bs-cyan);
   letter-spacing: 2px;
 }
 
@@ -284,16 +235,20 @@ a {
 }
 
 .circle {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  font-size: 20px;
-  justify-content: center;
-  align-items: center;
+  width: 50px;
+  height: 50px;
+  position: relative;
   background-color: black;
-  color: white;
   border-radius: 100%;
-  margin: 10px;
+}
+
+.circle-icon{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 1.2rem;
 }
 
 .sm-content-2 {
@@ -321,50 +276,6 @@ a {
   position: absolute;
 }
 
-
-@media (max-width: 768px) {
-  .resume {
-    padding: 80px 15px;
-  }
-
-  .sm-content-1 {
-    text-align: center;
-  }
-  
-  .edu-title-l {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin: none;
-  }
-
-  .edu-description-l{
-    margin: -5px 0px 5px 0px;
-  }
-  
-  .sm-content-icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .fa-arrow-right-long{
-    margin: 0px 10px 0px 0px;
-  }
-  
-  .sm-content-2 {
-    text-align: left;
-  }
-  
-  .edu-title-r {
-    font-weight: 700;
-    font-size: 1rem;
-  }
-  
-  .edu-description-r{
-    font-size: 13px;
-  }
-} 
-
 /*==================================Resume End==================================*/
 
 /*==================================Portfolio Start==================================*/
@@ -378,7 +289,7 @@ a {
 }
 
 .p-title {
-  color: #0d6efd;
+  color: var(--bs-cyan);
   letter-spacing: 2px;
   font-weight: 700;
 }
@@ -401,33 +312,6 @@ a {
   margin: 10px;
 }
 
-@media (max-width: 375px) {
-  .p-description-2 {
-    font-size: medium;
-    margin: 0px 10px;
-  }
-
-  .portfolio-projects {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .p-projects {
-    margin: 20px 20px 0px 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .card-title {
-    font-size: small;
-  }
-
-  .card-text {
-    font-size: smaller;
-  }
-}
-
 /*==================================Portfolio End==================================*/
 
 /*==================================Contact Start==================================*/
@@ -444,7 +328,7 @@ a {
 }
 
 .c-title {
-  color: #0d6efd;
+  color: var(--bs-cyan);
   letter-spacing: 5px;
   font-weight: 700;
 }
@@ -473,7 +357,7 @@ form {
   padding-bottom: 10px;
   padding-left: 10px;
   margin: 8px 0px;
-  border-bottom: 2px solid #0d6efd;
+  border-bottom: 2px solid var(--bs-cyan);
 }
 
 .submitform {
@@ -485,39 +369,11 @@ form {
   letter-spacing: 2px;
   outline: none;
   border: none;
-  background-color: #0d6efd;
+  background-color: var(--bs-cyan);
 }
 
 .submitform:hover {
   background-color: #035adb;
-}
-
-@media (max-width: 375px) {
-  .contact {
-    padding: 80px 0 30px 0;
-  }
-
-  .contact-titles {
-    padding: 0px 0px 15px 0px;
-  }
-
-  .input-field {
-    width: 85%;
-  }
-
-  .submitform {
-    width: 85%;
-  }
-}
-
-@media (max-width: 768px) {
-  .input-field {
-    width: 80%;
-  }
-
-  .submitform {
-    width: 80%;
-  }
 }
 
 /*==================================Contact End==================================*/
@@ -539,35 +395,12 @@ form {
 .c-c-title {
   padding: 5px;
   font-weight: bolder;
-  color: #0d6efd;
+  color: var(--bs-cyan);
 }
 .c-c-description {
   color: gray;
   font-weight: 200;
   letter-spacing: 1px;
-}
-
-@media (max-width: 375px) {
-  .contact-2 {
-    padding: 10px 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .contact-2 {
-    padding: 0 20px 20px 20px;
-  }
-
-  .c-icon {
-    font-size: 25px;
-  }
-
-  .c-c-title {
-    font-size: 0.8rem;
-  }
-  .c-c-description {
-    font-size: 0.8rem;
-  }
 }
 
 /*==================================Conatct-2 End==================================*/
@@ -603,13 +436,7 @@ form {
 }
 
 .f-icons a:hover {
-  color: #0d6efd;
-}
-
-@media (max-width: 375px) {
-  .f-text {
-    font-size: 0.8rem;
-  }
+  color: var(--bs-cyan);
 }
 
 /*==================================Footer End==================================*/
