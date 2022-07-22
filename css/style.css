@@ -1,0 +1,623 @@
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+/*==================================Banner Start==================================*/
+
+.banner {
+  background-image: linear-gradient(#04091eb3, #04091eb3),
+    url(../assets/banner-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.banner-content {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
+.helloworld {
+  color: #0d6efd;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  line-height: 0;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 5.5rem;
+}
+
+.desgn {
+  letter-spacing: 2px;
+  opacity: 75%;
+}
+
+.about-me-btn {
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0;
+  border-width: 2px;
+  margin-top: 50px;
+}
+
+.add-icons {
+  padding-left: 5px;
+}
+
+.social-media-icons {
+  position: absolute;
+  padding-top: 8%;
+}
+
+.social-media-icons a {
+  color: white;
+  margin: 0px 1% 0px 2%;
+  font-size: 1.5rem;
+}
+
+.social-media-icons a:hover {
+  color: #0d6efd;
+}
+
+@media (max-width: 375px) {
+  .helloworld {
+    font-size: medium;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .desgn {
+    font-size: 0.8rem;
+  }
+
+  .about-me-btn {
+    padding: 10px 15px;
+    font-size: 0.8rem;
+  }
+
+  .social-media-icons a {
+    margin: 0px 2% 0px 2%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+/*==================================Banner Start==================================*/
+
+/*==================================featured Projects Start==================================*/
+
+.featured-projects-titles {
+  padding-top: 5%;
+  text-align: center;
+}
+
+.fp-title {
+  color: #0d6efd;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.fp-description {
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+@media (max-width: 375px) {
+
+  .fp-projects {
+    margin: 2% 5%;
+    width: 90%;
+  }
+}
+
+/*==================================featured Projects End==================================*/
+
+/*==================================About Start==================================*/
+
+.about {
+  padding: 80px 0px;
+}
+
+.about-titles {
+  text-align: center;
+}
+
+.a-title {
+  color: #0d6efd;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.a-description {
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.profile-pic {
+  width: 30%;
+}
+
+.about-titles p{
+  margin: 10px;
+}
+
+.ap-intro {
+  text-align: justify;
+  margin: 20px 0;
+}
+
+.about-2 .text {
+  letter-spacing: 1px;
+}
+
+.about-btns {
+  padding-top: 3%;
+  text-align: center;
+}
+
+.about-btns .btn {
+  font-size: 1rem;
+  font-weight: 600;
+  height: 50px;
+  width: 300px;
+  border-radius: 0px;
+  letter-spacing: 0.1rem;
+}
+
+.ab-light {
+  color: black;
+  background-color: white;
+  outline-color: black;
+  outline-width: 1px;
+  outline-style: solid;
+  margin: 10px 20px;
+  padding: 10px;
+}
+
+.ab-dark {
+  color: white;
+  background-color: black;
+  outline-color: white;
+  outline-width: 1px;
+  outline-style: solid;
+  margin: 10px 20px;
+  padding: 10px;
+}
+
+@media (max-width: 375px) {
+
+  .profile-pic {
+    width: 80%;
+  }
+  
+  .about-titles p{
+    font-size: small;
+    margin: 10px;
+  }
+
+  .profile .text,.skills .text{
+    text-align: center;
+  }
+
+  .ap-intro {
+    text-align: justify;
+    padding: 0px 15px;
+  }
+  
+  .about-2 .text,.fullname p,.dob p,.website p,.email p,.skills,.skill-progress {
+    padding: 0px 15px;
+  }
+  
+}
+
+/*==================================About End==================================*/
+
+/*==================================Resume Start==================================*/
+
+.resume {
+  background-color: silver;
+  padding: 80px;
+}
+
+.resume-titles {
+  text-align: center;
+}
+
+.r-title {
+  color: #0d6efd;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.r-description {
+  font-weight: 400;
+}
+
+.r-title-2 {
+  margin: 20px;
+  color: #0d6efd;
+  letter-spacing: 2px;
+}
+
+.content-1 {
+  text-align: right;
+}
+
+.edu-title-l {
+  font-weight: 700;
+}
+
+.edu-description-l {
+  font-size: small;
+  font-style: italic;
+}
+
+.content-icons {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.content-2 {
+  text-align: left;
+}
+
+.edu-title-r {
+  margin-bottom: 10px;
+}
+
+.edu-description-r {
+  font-weight: 400;
+  line-height: 150%;
+  font-style: italic;
+}
+
+.edu-sm{
+  visibility: hidden;
+  position: absolute;
+}
+
+@media (max-width: 375px) {
+  .resume {
+    padding: 80px 15px;
+  }
+
+  .edu-lg{
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .edu-sm{
+    visibility: visible;
+    position: unset;
+  }
+
+  .sm-content-1 {
+    text-align: center;
+  }
+  
+  .edu-title-l {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: none;
+  }
+
+  .edu-description-l{
+    margin: -5px 0px 5px 0px;
+  }
+  
+  .sm-content-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    margin: 10px;
+  }
+
+  .fa-arrow-right-long{
+    margin: 0px 10px 0px 0px;
+  }
+  
+  .sm-content-2 {
+    text-align: left;
+  }
+  
+  .edu-title-r {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  
+  .edu-description-r{
+    font-size: 13px;
+  }
+} 
+
+
+/*==================================Resume End==================================*/
+
+/*==================================Portfolio Start==================================*/
+
+.portfolio {
+  padding: 80px 0px;
+}
+
+.portfolio-titles {
+  text-align: center;
+}
+
+.p-title {
+  color: #0d6efd;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.p-description {
+  font-weight: 400;
+}
+
+.p-description-2 {
+  margin-top: 15px;
+}
+
+.portfolio-projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.p-projects {
+  margin: 10px;
+}
+
+@media (max-width: 375px) {
+  .p-description-2 {
+    font-size: medium;
+    margin: 0px 10px;
+  }
+
+  .portfolio-projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .p-projects {
+    margin: 20px 20px 0px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: small;
+  }
+
+  .card-text {
+    font-size: smaller;
+  }
+}
+
+/*==================================Portfolio End==================================*/
+
+/*==================================Contact Start==================================*/
+
+.contact {
+  color: white;
+  background-color: #151515;
+  padding: 80px 70px 30px 70px;
+  text-align: center;
+}
+
+.contact-titles {
+  padding-bottom: 30px;
+}
+
+.c-title {
+  color: #0d6efd;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+
+.c-description {
+  font-weight: 400;
+}
+
+.c-description-2 {
+  margin-top: 15px;
+  font-style: italic;
+  font-weight: 300;
+  opacity: 75%;
+}
+
+form {
+  margin: none;
+}
+
+.input-field {
+  background-color: #151515;
+  color: white;
+  border: none;
+  width: 50%;
+  outline: none;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin: 8px 0px;
+  border-bottom: 2px solid #0d6efd;
+}
+
+.submitform {
+  padding: 15px;
+  margin-top: 20px;
+  color: white;
+  font-weight: 600;
+  width: 50%;
+  letter-spacing: 2px;
+  outline: none;
+  border: none;
+  background-color: #0d6efd;
+}
+
+.submitform:hover {
+  background-color: #035adb;
+}
+
+@media (max-width: 375px) {
+  .contact {
+    padding: 80px 0 30px 0;
+  }
+
+  .contact-titles {
+    padding: 0px 0px 15px 0px;
+  }
+
+  .input-field {
+    width: 85%;
+  }
+
+  .submitform {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .input-field {
+    width: 80%;
+  }
+
+  .submitform {
+    width: 80%;
+  }
+}
+
+/*==================================Contact End==================================*/
+
+/*==================================Contact-2 Start==================================*/
+
+.contact-2 {
+  background-color: #151515;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.c-icon {
+  margin: 10px;
+  font-size: 30px;
+  color: white;
+}
+
+.c-c-title {
+  padding: 5px;
+  font-weight: bolder;
+  color: #0d6efd;
+}
+.c-c-description {
+  color: gray;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 375px) {
+  .contact-2 {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-2 {
+    padding: 0 20px 20px 20px;
+  }
+
+  .c-icon {
+    font-size: 25px;
+  }
+
+  .c-c-title {
+    font-size: 0.8rem;
+  }
+  .c-c-description {
+    font-size: 0.8rem;
+  }
+}
+
+/*==================================Conatct-2 End==================================*/
+
+/*==================================Footer Start==================================*/
+
+.footer {
+  padding-bottom: 20px;
+  background-color: #151515;
+}
+
+.f-text {
+  padding: 15px 0 0 0;
+  color: gray;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: medium;
+}
+
+.f-name {
+  color: white;
+}
+
+.f-icons {
+  padding: 10px 0 10px 0;
+  text-align: center;
+}
+
+.f-icons a {
+  font-size: large;
+  margin: 0 10px;
+  color: white;
+}
+
+.f-icons a:hover {
+  color: #0d6efd;
+}
+
+@media (max-width: 375px) {
+  .f-text {
+    font-size: 0.8rem;
+  }
+}
+
+/*==================================Footer End==================================*/
