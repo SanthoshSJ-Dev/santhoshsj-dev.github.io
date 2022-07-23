@@ -154,6 +154,10 @@ a:hover{
   padding: 15px;
 }
 
+.progress-bar{
+  background-color: var(--primary-color);
+}
+
 .about-secondary .text {
   letter-spacing: 1px;
 }
