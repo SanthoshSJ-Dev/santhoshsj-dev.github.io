@@ -1,3 +1,3 @@
 setTimeout(function(){
     $('.preloader').fadeToggle();
-}, 5000);
+}, 1000);

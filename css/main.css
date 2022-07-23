@@ -48,59 +48,130 @@ a:hover {
   font-weight: 700;
   letter-spacing: 1.5px;
   line-height: 0;
+  font-size: 1.4rem;
 }
 
 .name {
   font-weight: 700;
-  font-size: 75px;
+  font-size: 5rem;
 }
 
 .desgn {
   line-height: 0;
   letter-spacing: 2px;
   opacity: 75%;
+  font-size: 1rem;
 }
 
 .about-me-btn {
   padding: 12px 20px;
   margin: 30px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 1rem;
   border-radius: 0;
   border-width: 2px;
 }
 
-.s-m-icons{
+.s-m-icons {
   position: absolute;
   left: 50%;
   bottom: 5%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .s-m-icons a {
-  padding: 10px;
-  font-size: 20px;
+  padding: 1rem;
+  font-size: 1.5rem;
 }
 
+@media (max-width: 576px) {
+  .helloworld {
+    font-size: 1rem;
+  }
+
+  .name {
+    font-size: 3rem;
+  }
+
+  .desgn {
+    font-size: 0.8rem;
+  }
+
+  .about-me-btn {
+    font-size: 0.8rem;
+  }
+
+  .s-m-icons a {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .helloworld {
+    font-size: 1.2rem;
+  }
+
+  .name {
+    font-size: 4rem;
+  }
+
+  .desgn {
+    font-size: 0.9rem;
+  }
+
+  .about-me-btn {
+    font-size: 0.9rem;
+  }
+
+  .s-m-icons a {
+    padding: 0rem 1rem;
+    font-size: 1rem;
+  }
+}
 
 /*==================================Banner Start==================================*/
 
 /*==================================featured Projects Start==================================*/
 
 .featured-projects-titles {
-  padding-top: 5%;
+  padding-top: 80px;
   text-align: center;
 }
 
 .fp-title {
-  color: var(--bs-cyan);
   letter-spacing: 2px;
-  font-weight: 700;
+  color: var(--primary-color);
+  font-weight: var(--primary-header-text-weight);
+  font-size: var(--primary-header-text-size);
 }
 
 .fp-description {
   margin-top: 10px;
-  font-weight: 400;
+  font-size: var(--secondary-header-text-size);
+  font-weight: var(--secondary-header-text-weight);
+}
+
+
+@media (max-width: 576px) {
+  .fp-title {
+    font-size: 1.3rem;
+  }
+
+  .fp-description {
+    font-size: 1rem;
+  }
+
+  .fp-card {
+    margin: 5px;
+  }
+
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .fp-card {
+    margin: 5px;
+  }
 }
 
 /*==================================featured Projects End==================================*/
@@ -116,14 +187,16 @@ a:hover {
 }
 
 .a-title {
-  color: var(--bs-cyan);
+  color: var(--primary-color);
   letter-spacing: 2px;
-  font-weight: 700;
+  font-size: var(--primary-header-text-size);
+  font-weight: var(--primary-header-text-weight);
 }
 
 .a-description {
-  margin-top: 10px 0px;
-  font-weight: 400;
+  margin-top: 10px;
+  font-weight: var(--secondary-header-text-weight);
+  font-size: var(--secondary-header-text-size);
 }
 
 .profile-pic {
@@ -189,13 +262,37 @@ a:hover {
   padding: 10px;
 }
 
+@media (max-width: 576px) {
+
+  .a-title {
+    font-size: 1.3rem;
+  }
+
+  .a-description {
+    font-size: 1rem;
+  }
+
+  .profile-pic {
+    width: 90%;
+  }
+
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+
+  .profile-pic {
+    width: 60%;
+  }
+
+}
+
 /*==================================About End==================================*/
 
 /*==================================Resume Start==================================*/
 
 .resume {
   background-color: var(--light-bg-gray);
-  padding: 80px;
+  padding: 80px 0px;
 }
 
 .resume-titles {
@@ -203,18 +300,20 @@ a:hover {
 }
 
 .r-title {
-  color: var(--bs-cyan);
+  color: var(--primary-color);
   letter-spacing: 2px;
-  font-weight: 700;
+  font-size: var(--primary-header-text-size);
+  font-weight: var(--primary-header-text-weight);
 }
 
 .r-description {
-  font-weight: 400;
+  font-weight: var(--secondary-header-text-weight);
+  font-size: var(--secondary-header-text-size);
 }
 
 .r-title-2 {
   margin: 20px;
-  color: var(--bs-cyan);
+  color: var(--primary-color);
   letter-spacing: 2px;
 }
 
@@ -273,6 +372,72 @@ a:hover {
   position: absolute;
 }
 
+@media (max-width:576px) {
+
+  .r-title {
+    font-size: 1.3rem;
+  }
+
+  .r-description {
+    font-size: 1rem;
+  }
+
+  .r-title-2 {
+    font-size: 1.3rem;
+  }
+
+  .sm-content-1 {
+    text-align: center;
+  }
+
+  .circle {
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #21242d;
+  }
+
+
+  .fa-arrow-right-long {
+    visibility: visible;
+    position: relative;
+    margin-right: 10px;
+  }
+
+  .edu-title-r {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .edu-description-r {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width:577px) and (max-width:992px) {
+
+  .sm-content-1 {
+    text-align: center;
+  }
+
+  .circle {
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #21242d;
+  }
+
+  .edu-title-r {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .edu-description-r {
+    font-size: 1rem;
+  }
+}
+
 /*==================================Resume End==================================*/
 
 /*==================================Portfolio Start==================================*/
@@ -286,28 +451,40 @@ a:hover {
 }
 
 .p-title {
-  color: var(--bs-cyan);
+  color: var(--primary-color);
   letter-spacing: 2px;
-  font-weight: 700;
+  font-weight: var(--primary-header-text-weight);
+  font-size: var(--primary-header-text-size);
 }
 
 .p-description {
-  font-weight: 400;
+  font-size: var(--secondary-header-text-size);
+  font-weight: var(--secondary-header-text-weight);
 }
 
 .p-description-2 {
+  font-size: var(--secondary-header-text-size);
   margin-top: 15px;
 }
 
-.portfolio-projects {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
+@media (max-width:576px) {
+
+  .p-title {
+    font-size: 1.3rem;
+  }
+
+  .p-description {
+    font-size: 1rem;
+  }
+
+  .p-description-2 {
+    font-size: 1rem;
+  }
+
 }
 
-.p-projects {
-  margin: 10px;
-}
+@media (min-width:577px) and (max-width:992px) {}
+
 
 /*==================================Portfolio End==================================*/
 
@@ -328,19 +505,22 @@ a:hover {
 }
 
 .c-title {
-  color: var(--bs-cyan);
+  color: var(--primary-color);
   letter-spacing: 5px;
-  font-weight: 700;
+  font-size: var(--primary-header-text-size);
+  font-weight: var(--primary-header-text-weight);
 }
 
 .c-description {
-  font-weight: 400;
+  font-size: var(--secondary-header-text-size);
+  font-weight: var(--secondary-header-text-weight);
 }
 
 .c-description-2 {
   margin-top: 15px;
   font-style: italic;
-  font-weight: 300;
+  font-size: var(--secondary-header-text-size);
+  font-weight: 100;
   opacity: 75%;
 }
 
@@ -357,7 +537,7 @@ form {
   padding-bottom: 10px;
   padding-left: 10px;
   margin: 8px 0px;
-  border-bottom: 2px solid var(--bs-cyan);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .submitform {
@@ -369,12 +549,63 @@ form {
   letter-spacing: 2px;
   outline: none;
   border: none;
-  background-color: var(--bs-cyan);
+  background-color: var(--primary-color);
 }
 
 .submitform:hover {
   background-color: var(--secondary-color);
 }
+
+@media (max-width:576px) {
+  .c-title {
+    font-size: 1.3rem;
+  }
+
+  .c-description {
+    font-size: 1rem;
+  }
+
+  .c-description-2 {
+    font-size: 1rem;
+  }
+
+  .input-field {
+    font-size: 1rem;
+    width: 95%;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin: 8px 0px;
+    border-bottom: 1px solid var(--primary-color);
+  }
+
+  .submitform {
+    padding: 10px;
+    margin-top: 10px;
+    width: 95%;
+  }
+
+}
+
+@media (min-width:577px) and (max-width:992px) {
+
+  .input-field {
+    font-size: 1rem;
+    width: 80%;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin: 8px 0px;
+    border-bottom: 1px solid var(--primary-color);
+  }
+
+  .submitform {
+    padding: 10px;
+    margin-top: 10px;
+    width: 80%;
+  }
+}
+
+
+
 
 /*==================================Contact End==================================*/
 
@@ -394,14 +625,38 @@ form {
 .c-c-title {
   padding: 5px;
   font-weight: bolder;
-  color: var(--bs-cyan);
+  color: var(--primary-color);
 }
 
 .c-c-description {
-  color: gray;
+  user-select: text;
+  color: ghostwhite;
   font-weight: 200;
   letter-spacing: 1px;
 }
+
+@media (max-width:576px) {
+  
+.c-icon{
+  font-size: 25px;
+}
+
+  .c-c-description{
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width:577px) and (max-width:992px){
+
+  .c-icon{
+    font-size: 25px;
+  }
+
+  .c-c-description{
+    font-size: 0.8rem;
+  }
+}
+
 
 /*==================================Conatct-2 End==================================*/
 
@@ -417,7 +672,7 @@ form {
   color: gray;
   letter-spacing: 1px;
   text-align: center;
-  font-size: medium;
+  font-size: 1rem;
 }
 
 .f-name {
@@ -438,5 +693,21 @@ form {
 .f-icons a:hover {
   color: var(--bs-cyan);
 }
+
+@media (max-width:576px) {
+  .f-text{
+    padding: 5px 0px 0px 0px;
+    font-size: 0.8rem;
+  }
+
+}
+
+@media (min-width:577px) and (max-width:992px){
+  .f-text{
+    font-size: 1rem;
+  }
+  
+}
+
 
 /*==================================Footer End==================================*/

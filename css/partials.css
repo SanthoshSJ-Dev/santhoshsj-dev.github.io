@@ -6,6 +6,7 @@ html,body{
     width: 100%;
     height: 100%;
     font-family: var(--roboto);
+    user-select: none;
 }
 
 :root{
@@ -13,5 +14,14 @@ html,body{
     --secondary-color:#106b81;
     --dark-bg-color:#151515;
     --light-bg-gray:#c0c0c038;
+
+
+
+    --primary-header-text-size:1.5rem;
+    --primary-header-text-weight:700;
+
+    --secondary-header-text-size:1.3rem;
+    --secondary-header-text-weight:400;
+
     --roboto:'Roboto',sans-serif
 }
