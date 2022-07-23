@@ -6,17 +6,17 @@ a {
 }
 
 a:hover{
-  color:unset;
+  color:var(--secondary-color);
 }
 
 .cyan-color{
   color: var(--primary-color);
 }
 
-/*.preloader{
+.preloader{
   background: #21242d url(../assets/loader.gif) no-repeat center center;
   background-size: 30%;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: fixed;
   z-index: 100;
@@ -201,7 +201,7 @@ a:hover{
 /*==================================Resume Start==================================*/
 
 .resume {
-  background-color: var(--bg-gray);
+  background-color: var(--light-bg-gray);
   padding: 80px;
 }
 
@@ -320,10 +320,13 @@ a:hover{
 
 /*==================================Contact Start==================================*/
 
-.contact {
+.contact{
+  background-color: var(--dark-bg-color);
+}
+
+.contact-1 {
   color: white;
-  background-color: #151515;
-  padding: 80px 70px 30px 70px;
+  padding: 80px 0px 40px 0px;
   text-align: center;
 }
 
@@ -353,10 +356,10 @@ form {
 }
 
 .input-field {
-  background-color: #151515;
+  background-color: var(--dark-bg-color);
   color: white;
   border: none;
-  width: 50%;
+  width: 60%;
   outline: none;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -369,7 +372,7 @@ form {
   margin-top: 20px;
   color: white;
   font-weight: 600;
-  width: 50%;
+  width: 60%;
   letter-spacing: 2px;
   outline: none;
   border: none;
@@ -377,7 +380,7 @@ form {
 }
 
 .submitform:hover {
-  background-color: #035adb;
+  background-color:var(--secondary-color);
 }
 
 /*==================================Contact End==================================*/
@@ -385,7 +388,6 @@ form {
 /*==================================Contact-2 Start==================================*/
 
 .contact-2 {
-  background-color: #151515;
   padding-bottom: 30px;
   text-align: center;
 }
@@ -413,7 +415,7 @@ form {
 
 .footer {
   padding-bottom: 20px;
-  background-color: #151515;
+  background-color: var(--dark-bg-color);
 }
 
 .f-text {
