@@ -28,9 +28,9 @@
 
   <!--==================================Preloader Start==================================-->
   <!--==================================Banner Start==================================-->
-  <div class="container-fluid banner" id="banner">
-    <div class="row">
-      <div class="col-md-12 banner-content">
+  <div class="banner" id="banner">
+    <div class="banner-1">
+      <div class="container-fluid banner-content">
         <h4 class="text helloworld">HELLO, WORLD.</h4>
         <h1 class="text name">
           I<span class="cyan-color">'</span>m Santhosh<span class="cyan-color">.</span>
@@ -38,15 +38,13 @@
         <h6 class="text desgn">STUDENT | DEVELOPER | STARTER</h6>
         <a class="btn btn-outline-light about-me-btn" href="#about">MORE ABOUT ME <i
             class="add-icons fa-solid fa-angle-down"></i></a>
-        <div class="row">
-          <div class="col social-media-icons">
-            <a target="_blank" href="https://twitter.com/Sandy___sj"><i class="fa-brands fa-twitter"></i></a>
-            <a target="_blank" href="https://www.instagram.com/sandy___sj/"><i class="fa-brands fa-instagram"></i></a>
-            <a target="_blank" href="https://github.com/SanthoshSJ-Dev"><i class="fa-brands fa-github"></i></a>
-            <a target="_blank" href="https://www.codechef.com/users/santhoshsj"><i class="fa-brands fa-codepen"></i></a>
-            <a target="_blank" href="https://in.pinterest.com/santhoshsekar2903/"><i
-                class="fa-brands fa-pinterest-p"></i></a>
-          </div>
+        <div class="s-m-icons">
+          <a target="_blank" href="https://twitter.com/Sandy___sj"><i class="fa-brands fa-twitter"></i></a>
+          <a target="_blank" href="https://github.com/SanthoshSJ-Dev"><i class="fa-brands fa-github"></i></a>
+          <a target="_blank" href="https://www.codechef.com/users/santhoshsj"><i class="fa-brands fa-codepen"></i></a>
+          <a target="_blank" href="https://www.instagram.com/sandy___sj/"><i class="fa-brands fa-instagram"></i></a>
+          <a target="_blank" href="https://in.pinterest.com/santhoshsekar2903/"><i
+              class="fa-brands fa-pinterest-p"></i></a>
         </div>
       </div>
     </div>
@@ -309,64 +307,64 @@
 
 <div class="container-fluid contact" id="contact">
   <div class="container contact-1">
-  <div class="row">
-    <div class="col contact-titles">
-      <h5 class="text c-title">CONTACT</h5>
-      <h5 class="text c-description">I'd Love To Hear From You.</h5>
-      <h5 class="text c-description-2">Feel free to Contact Me:</h5>
+    <div class="row">
+      <div class="col contact-titles">
+        <h5 class="text c-title">CONTACT</h5>
+        <h5 class="text c-description">I'd Love To Hear From You.</h5>
+        <h5 class="text c-description-2">Feel free to Contact Me:</h5>
+      </div>
     </div>
+    <form name="form" id="contactForm" method="POST" action="https://formspree.io/f/mwkyaeja">
+      <fieldset>
+        <div class="form-field">
+          <input name="name" type="text" id="contactName" placeholder="Name" value="" minlength="2" required=""
+            class="input-field" />
+        </div>
+        <div class="form-field">
+          <input name="_replyto" type="email" id="contactEmail" placeholder="Email" value="" required=""
+            class="input-field" />
+        </div>
+        <div class="form-field">
+          <input name="_subject" type="text" id="contactSubject" placeholder="Subject" value="" class="input-field" />
+        </div>
+        <div class="form-field">
+          <textarea name="message" id="contactMessage" placeholder="message" rows="5" cols="40" required=""
+            class="input-field"></textarea>
+        </div>
+        <div class="form-field">
+          <button class="submitform" name="submit">SUBMIT</button>
+        </div>
+      </fieldset>
+    </form>
   </div>
-  <form name="form" id="contactForm" method="POST" action="https://formspree.io/f/mwkyaeja">
-    <fieldset>
-      <div class="form-field">
-        <input name="name" type="text" id="contactName" placeholder="Name" value="" minlength="2" required=""
-          class="input-field" />
-      </div>
-      <div class="form-field">
-        <input name="_replyto" type="email" id="contactEmail" placeholder="Email" value="" required=""
-          class="input-field" />
-      </div>
-      <div class="form-field">
-        <input name="_subject" type="text" id="contactSubject" placeholder="Subject" value="" class="input-field" />
-      </div>
-      <div class="form-field">
-        <textarea name="message" id="contactMessage" placeholder="message" rows="5" cols="40" required=""
-          class="input-field"></textarea>
-      </div>
-      <div class="form-field">
-        <button class="submitform" name="submit">SUBMIT</button>
-      </div>
-    </fieldset>
-  </form>
-</div>
 
 
-<div class="container contact-2">
-  <div class="row">
-    <div class="col-md-4 location">
-      <i class="fa fa-location-dot c-icon"></i>
-      <h6 class="c-c-title"><a target="_blank"
-          href="https://www.google.com/maps/@12.8333043,79.6808097,61m/data=!3m1!1e3">WHERE TO FIND ME</a></br>
+  <div class="container contact-2">
+    <div class="row">
+      <div class="col-md-4 location">
+        <i class="fa fa-location-dot c-icon"></i>
+        <h6 class="c-c-title"><a target="_blank"
+            href="https://www.google.com/maps/@12.8333043,79.6808097,61m/data=!3m1!1e3">WHERE TO FIND ME</a></br>
+          <h6 class="c-c-description">
+            249, Ellaiyamman Koil Street,
+            Thiruparuthikundram, Kanchipuram,
+            Tamil Nadu - 631 502
+          </h6>
+      </div>
+      <div class="col-md-4 mail">
+        <i class="fa fa-envelope c-icon"></i>
+        <h6 class="c-c-title"><a target="_blank" href="mailto:santhoshsekar2903@gmail.com">MAIL ME AT</a></h6>
         <h6 class="c-c-description">
-          249, Ellaiyamman Koil Street,
-          Thiruparuthikundram, Kanchipuram,
-          Tamil Nadu - 631 502
+          santhoshsekar2903@gmail.com
         </h6>
-    </div>
-    <div class="col-md-4 mail">
-      <i class="fa fa-envelope c-icon"></i>
-      <h6 class="c-c-title"><a target="_blank" href="mailto:santhoshsekar2903@gmail.com">MAIL ME AT</a></h6>
-      <h6 class="c-c-description">
-        santhoshsekar2903@gmail.com
-      </h6>
-    </div>
-    <div class="col-md-4 call">
-      <i class="fa fa-phone c-icon"></i>
-      <h6 class="c-c-title"><a target="_blank" href="callto:8608451017">CALL ME AT</a></h6>
-      <h6 class="c-c-description">Phone: (+91 <span class="cyan-color">860 845 1017</spanclas>)</h6>
+      </div>
+      <div class="col-md-4 call">
+        <i class="fa fa-phone c-icon"></i>
+        <h6 class="c-c-title"><a target="_blank" href="callto:8608451017">CALL ME AT</a></h6>
+        <h6 class="c-c-description">Phone: (+91 <span class="cyan-color">860 845 1017</spanclas>)</h6>
+      </div>
     </div>
   </div>
-</div>
 </div>
 
 <!--==================================Contact End==================================-->
