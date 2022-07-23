@@ -11,6 +11,7 @@ html,body{
 :root{
     --primary-color:#1793b3;
     --secondary-color:#106b81;
-    --bg-gray:#c0c0c038;
+    --dark-bg-color:#151515;
+    --light-bg-gray:#c0c0c038;
     --roboto:'Roboto',sans-serif
 }
